@@ -5,7 +5,7 @@ class RevealOnScroll {
     constructor(els, thresholdPercent) {
         this.thresholdPercent = thresholdPercent
         this.itemsToReveal = els
-        console.log(els)
+        // console.log(els)
         this.browserHeight = window.innerHeight
         this.hideInitially()
         this.scrollThrottle = throttle(this.calcCaller, 200).bind(this)
@@ -15,7 +15,7 @@ class RevealOnScroll {
     events() {
         window.addEventListener("scroll", this.scrollThrottle)
         window.addEventListener("resize", debounce(() => {
-            console.log("Resize just ran")
+            // console.log("Resize just ran")
             this.browserHeight = window.innerHeight
         }, 333))
     }
@@ -47,7 +47,7 @@ class RevealOnScroll {
         this.itemsToReveal.forEach(el => {
             el.classList.add("reveal-item")
             el.isRevealed = false
-            console.log(el)
+            // console.log(el)
         })
         this.itemsToReveal[this.itemsToReveal.length - 1].isLastItem = true
     }
