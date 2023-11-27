@@ -6,7 +6,7 @@ class StickyHeader {
     constructor() {
         this.siteHeader = document.querySelector(".site-header")
         this.pageSections = document.querySelectorAll(".page-section")
-        console.log(this.pageSections)
+        // console.log(this.pageSections)
         this.browserHeight = window.innerHeight
         this.previousScrollY = window.scrollY
         this.events()
