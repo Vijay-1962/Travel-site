@@ -8,7 +8,6 @@ new RevealOnScroll(document.querySelectorAll(".feature-item"), 75)
 new RevealOnScroll(document.querySelectorAll(".testimonial"), 60)
 new MobileMenu();
 let modal
-// console.log(modal)
 
 
 document.querySelectorAll(".open-modal").forEach(el => {
